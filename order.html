@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Language" content="en-za" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="./styling.css" />
+	<script defer src="./script/app.js"></script>
+    <title>Sipho Nkebe</title>
+  </head>
+
+  <body>
+    <div id="page">
+		<div id="sidebar">
+			<img src="./swegga.jpg" alt="swegga-image" />
+		  </div>
+      <div id="banner">
+        <img src="./delivery.gif" alt="delivery-image" />
+      </div>
+      <div id="navigation">
+        <img src="./links.gif" alt="link-image" usemap="#links-map" />
+
+        <map name="links-map">
+          <area
+            shape="rect"
+            coords="10,5, 95,35"
+            href="order.html"
+            target="_blank"
+            alt="order-page"
+          />
+          <area
+            shape="rect"
+            coords="105,5 ,190,35 "
+            href="./pages/services.html"
+            target="_blank"
+            alt="services-page"
+          />
+          <area
+            shape="rect"
+            coords="205,5 ,300,35"
+            href="./pages/products.html"
+            target="_blank"
+            alt="products-page"
+          />
+          <area
+            shape="rect"
+            coords="310,5 ,440,35"
+            href="./pages/orderStatus.html"
+            target="_blank"
+            alt="order-status-page"
+          />
+          <area
+            shape="rect"
+            coords="450,5 ,555,35"
+            href="./pages/contactUs.html"
+            target="_blank"
+            alt="contact-us-page"
+          />
+        </map>
+      </div>
+      <div id="main">
+		<form name="orders">
+			<table>
+				<caption>Product Summary</caption>
+				<thead>
+					<th>
+						Description
+					</th>
+					<th>
+						Size
+					</th>
+					<th>
+						Color
+					</th>
+					<th>
+						Price
+					</th>
+					<th>
+						Quantity
+					</th>
+					<th>
+						Total
+					</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<a href="./pages/female.html">
+								female Ski Jackets
+							</a>
+						</td>
+						<td>
+							<select id="female-sizes">
+								<option value="sm">Small</option>
+								<option value="md">Medium</option>
+								<option value="lg">Large</option>
+							</select>
+						</td>
+						<td>
+							<select id="female-colors">
+								<option value="red">Red</option>
+								<option value="pink">Pink</option>
+								<option value="black">Black</option>
+							</select>
+						</td>
+						<td>
+							<p id="female-price">
+								150.95
+							</p>
+						</td>
+						<td>
+							<input type="text" id="female-qty">
+						</td>
+						<td>
+							<p id="female-total-price"></p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="./pages/male.html">
+								Male Ski Jackets
+							</a>
+						</td>
+						<td>
+							<select id="male-sizes">
+								<option value="sm">Small</option>
+								<option value="md">Medium</option>
+								<option value="lg">Large</option>
+							</select>
+						</td>
+						<td>
+							<select id="male-colors">
+								<option value="red">Red</option>
+								<option value="blue">Blue</option>
+								<option value="white">White</option>
+							</select>
+						</td>
+						<td>
+							<p id="male-price">
+								180.95
+							</p>
+						</td>
+						<td>
+							<input type="text" id="male-qty">
+						</td>
+						<td>
+							<p id="male-total-price"></p>
+						</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="4">
+							Click to confirm and process your order
+						</td>
+						<td>
+							<button id="total-btn" type="button">
+								Total Price
+							</button>
+						</td>
+						<td>
+							<p id="total"></p>
+						</td>
+					</tr>
+				</tfoot>
+			</table>
+		</form>
+	  </div>
+      <div id="footer" class="alignRight">
+		<p class="copyrights">
+			&copy; 2020 Swegga Fashion &ndash; Sipho Nkebe
+		</p>
+	  </div>
+    </div>
+  </body>
+</html>
